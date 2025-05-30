@@ -3,12 +3,17 @@ using namespace std;
 int numperfecto (int);
 int main () {
 	int num;
-	cout<<"Ingrese un numero para verificar: " ;
+	cout<<"Ingrese un numero para verificar si es perfecto o no: ";
 	cin>>num;
-	if(numperfecto(num)==1) {
-		cout<<"El numero es perfecto";
-	}else {
-		cout<<"El numero no es perfecto";
+	if(num<0) {
+		cout<<"El numero debe ser positivo necesariamente para la verificacion."<<endl;
+	}
+	else{
+	    if(numperfecto(num)==1) {
+		    cout<<"El numero "<<num<<" es perfecto."<<endl;
+	    }else {
+		    cout<<"El numero "<<num<<" no es perfecto."<<endl;
+	    }	
 	}
 	return 0;
 }
