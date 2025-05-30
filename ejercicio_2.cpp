@@ -5,7 +5,9 @@ int main() {
 	int n;
 	cout<<"Ingrese un numero para la verificacion: ";
 	cin>>n;
-	if (verificar(n)==1) {
+	if (n<0){
+		cout<<"Todos los negativos no pueden ser primos";
+	} else if (verificar(n)==1) {
 		cout<<"El numero es primo";
 	} else {
 		cout<<"El numero no es primo";
