@@ -5,15 +5,19 @@ int minimocomunmultiplo(int , int );
 int main (){
 	int num1,num2,mcm,mcd;
 	cout<<"---CALCULAR EL MAXIMO COMUN DIVISOR Y MINIMO COMUN MULTIPLO DE DOS NUMEROS---"<<endl;
-	cout<<"Ingrese el primero numero: ";
+    cout<<"Ingrese el primero numero: ";
 	cin>>num1;
 	cout<<"Ingrese el segundo numero: ";
 	cin>>num2;
-	mcd=maximocomundivisor(num1,num2);
-	mcm=minimocomunmultiplo(num1,num2);
-	cout<<"---El MCD y MCM de "<<num1<<" y "<<num2<<" es: --- "<<endl;
-	cout<<"Maximo comun divisor: "<<mcd<<endl;
-	cout<<"Minimo comun multiplo: "<<mcm<<endl;
+	if (num1>0 && num2>0) {
+	    mcd=maximocomundivisor(num1,num2);
+	    mcm=minimocomunmultiplo(num1,num2);
+	    cout<<"---El MCD y MCM de "<<num1<<" y "<<num2<<" es: --- "<<endl;
+	    cout<<"Maximo comun divisor: "<<mcd<<endl;
+	    cout<<"Minimo comun multiplo: "<<mcm<<endl;
+    }else {
+    	cout<<"Los numeros deben ser mayor a cero necesariamente.";
+	}
 }
 
 int maximocomundivisor(int num1, int num2){
