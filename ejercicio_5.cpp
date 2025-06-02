@@ -16,11 +16,13 @@ int main(){
     return 0;
 }
 
-float sumatoria (int n){
+float sumatoria (int n){ 
 	float s;
 	s=0;
 	for (int i=1;i<=n;i++){
-		s=s+(float (factorial(i)) / (2*i) );
+		float termino=(float(factorial(i)) / (2*i));
+		cout<<"Termino "<<i<<": "<<i<<"! / "<<(2*i)<<" = "<<termino<<endl;
+		s=s+termino;
 	}
 	return s;
 }
