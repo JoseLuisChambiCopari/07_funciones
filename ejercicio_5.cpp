@@ -7,8 +7,12 @@ int main(){
 	float resultado;
 	cout<<"Ingrese un numero para ejecutar la serie: ";
     cin>>n;
-    resultado= sumatoria (n);
-    cout<<"El resultado de la serie con "<<n<<" terminos es: "<<resultado;
+    if (n>0){
+        resultado= sumatoria (n);
+        cout<<"El resultado de la serie con "<<n<<" terminos es: "<<resultado;   	
+	}else {
+		cout<<"No se puede calcular la serie.";
+	}
     return 0;
 }
 
