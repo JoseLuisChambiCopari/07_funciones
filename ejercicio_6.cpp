@@ -6,10 +6,14 @@ int main() {
 	int n,suma;
 	cout<<"Ingrese el numero de terminos que quiere que tenga la serie Fibonacci: ";
 	cin>>n;
-	cout<<"La suma de la serie: "<<endl;
-	mostrarFibonacci(n);
-	suma = sumaFibonacci(n);
-	cout<<"\nes:"<<suma;
+	if (n>0) {
+		cout<<"La suma de la serie: "<<endl;
+	    mostrarFibonacci(n);
+	    suma = sumaFibonacci(n);
+	    cout<<"\nes:"<<suma;
+	}else {
+		cout<<"Es necesario un numero positivo para interactuar con la sumatoria de Fibonacci";
+	}
 	return 0;
 }
 
